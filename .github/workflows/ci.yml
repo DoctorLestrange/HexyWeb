@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [ '20', '22' ]
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Type-check
+        run: npm run lint
+
+      - name: Run unit tests
+        run: npm test
+
+      - name: Build production bundle
+        env:
+          NODE_ENV: production
+        run: npm run build
+
+      - name: Verify production bundle contents
+        run: |
+          test -f dist/index.html
+          test -f dist/icon.png
+          test -f dist/.nojekyll
+          test -d dist/assets
+
+      - name: Upload production bundle artifact
+        if: matrix.node == '22'
+        uses: actions/upload-artifact@v4
+        with:
+          name: hexy-web-dist
+          path: dist/
+          if-no-files-found: error

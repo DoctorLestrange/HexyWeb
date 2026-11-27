@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexy — File Hashing &amp; Integrity Verification</title>
+    <meta
+      name="description"
+      content="Fast, lightweight, privacy-first web utility for client-side file hashing and integrity verification supporting 26 cryptographic hash and checksum algorithms."
+    />
+    <meta name="author" content="DoctorLestrange" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="theme-color" content="#1a1a1d" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f2f1ec" media="(prefers-color-scheme: light)" />
+
+    <link rel="canonical" href="https://doctorlestrange.github.io/HexyWeb/" />
+    <link rel="icon" type="image/png" href="./icon.png" />
+    <link rel="apple-touch-icon" href="./icon.png" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hexy" />
+    <meta property="og:url" content="https://doctorlestrange.github.io/HexyWeb/" />
+    <meta property="og:title" content="Hexy — File Hashing &amp; Integrity Verification" />
+    <meta
+      property="og:description"
+      content="Fast, lightweight, privacy-first web utility for client-side file hashing and integrity verification supporting 26 cryptographic hash and checksum algorithms."
+    />
+    <meta property="og:image" content="https://doctorlestrange.github.io/HexyWeb/icon.png" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Hexy — File Hashing &amp; Integrity Verification" />
+    <meta
+      name="twitter:description"
+      content="Compute and verify file hashes locally in your browser across 26 algorithms — zero uploads, zero telemetry."
+    />
+    <meta name="twitter:image" content="https://doctorlestrange.github.io/HexyWeb/icon.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Hexy",
+        "url": "https://doctorlestrange.github.io/HexyWeb/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript",
+        "description": "Fast, lightweight, privacy-first web utility for client-side file hashing and integrity verification supporting 26 cryptographic hash and checksum algorithms.",
+        "author": {
+          "@type": "Person",
+          "name": "DoctorLestrange",
+          "url": "https://github.com/DoctorLestrange"
+        },
+        "license": "https://github.com/DoctorLestrange/HexyWeb/blob/main/LICENSE",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var raw = localStorage.getItem('hexy.preferences');
+          if (raw) {
+            var parsed = JSON.parse(raw);
+            if (parsed && parsed.theme === 'light') {
+              document.documentElement.classList.remove('dark');
+              return;
+            }
+          }
+        } catch (e) {}
+        document.documentElement.classList.add('dark');
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <div
+        style="
+          max-width: 520px;
+          margin: 4rem auto;
+          padding: 1.5rem;
+          font-family: system-ui, -apple-system, sans-serif;
+          line-height: 1.6;
+          border: 1px solid #333339;
+          border-radius: 12px;
+        "
+      >
+        <h1 style="margin-top: 0; font-size: 1.25rem">Hexy requires JavaScript</h1>
+        <p style="margin-bottom: 0">
+          All file hashing runs locally inside your browser without uploading data to any server.
+          Please enable JavaScript to use Hexy.
+        </p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+bun.lock
+bun.lockb
+
+# Build outputs
+dist/
+dist-ssr/
+coverage/
+*.local
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs & temporary artifacts
+*.log
+npm-debug.log*
+.playwright-cli/
+release-artifacts/
+.aistudio/
+
+# Editors & IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

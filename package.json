@@ -1,0 +1,54 @@
+{
+  "name": "hexy-web",
+  "version": "0.0.1",
+  "description": "Fast, lightweight, privacy-first web utility for client-side file hashing and integrity verification supporting 26 cryptographic hash and checksum algorithms.",
+  "author": "DoctorLestrange",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "homepage": "https://doctorlestrange.github.io/HexyWeb/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DoctorLestrange/HexyWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DoctorLestrange/HexyWeb/issues"
+  },
+  "keywords": [
+    "hash",
+    "checksum",
+    "sha256",
+    "sha3",
+    "blake3",
+    "ascon",
+    "integrity",
+    "verification",
+    "privacy",
+    "client-side",
+    "web-worker"
+  ],
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000",
+    "lint": "tsc --noEmit",
+    "test": "tsx --test src/utils/*.test.ts"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.8.0",
+    "lucide-react": "^0.511.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "tailwindcss": "^4.1.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3"
+  }
+}

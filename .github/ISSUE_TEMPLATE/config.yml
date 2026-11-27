@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Live Web App (GitHub Pages)
+    url: https://doctorlestrange.github.io/HexyWeb/
+    about: Open the live hosted Hexy web application directly in your browser.
+  - name: Security Policy
+    url: https://github.com/DoctorLestrange/HexyWeb/security/policy
+    about: Report a security vulnerability privately instead of opening a public issue.
