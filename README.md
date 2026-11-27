@@ -22,7 +22,7 @@
   <p>
     <strong><a href="https://doctorlestrange.github.io/HexyWeb/">Launch Hexy Web App →</a></strong>
   </p>
-</div>s
+</div>
 
 ---
 
