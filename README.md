@@ -2,27 +2,27 @@
   <img src="public/icon.png" alt="Hexy Logo" width="84" height="84" />
   <h1>Hexy</h1>
   <p><strong>A fast, lightweight, privacy-first web utility for file hashing and integrity verification.</strong></p>
-
-  <p>
+  <p style="text-align: center;">
     <a href="https://doctorlestrange.github.io/HexyWeb/">
       <img src="https://img.shields.io/badge/Live%20App-GitHub%20Pages-2589f5?style=flat-square&logo=githubpages&logoColor=white" alt="Live App on GitHub Pages" />
-    </a>
+    </a> &nbsp;
     <a href="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/ci.yml">
       <img src="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI Status" />
-    </a>
+    </a> &nbsp;
     <a href="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/deploy-pages.yml">
       <img src="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/deploy-pages.yml/badge.svg?branch=main" alt="Deploy to GitHub Pages Status" />
-    </a>
+    </a> &nbsp;
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-15803d?style=flat-square" alt="MIT License" />
-    </a>
+    </a> &nbsp;
     <img src="https://img.shields.io/badge/Privacy-100%25%20Client--Side-46464f?style=flat-square" alt="100% Client-Side Privacy" />
   </p>
+
 
   <p>
     <strong><a href="https://doctorlestrange.github.io/HexyWeb/">Launch Hexy Web App →</a></strong>
   </p>
-</div>
+</div>s
 
 ---
 
