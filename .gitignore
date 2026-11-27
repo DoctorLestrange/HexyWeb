@@ -36,3 +36,6 @@ release-artifacts/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# AI Studio Files
+.aistudio/
