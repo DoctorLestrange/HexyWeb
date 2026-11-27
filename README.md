@@ -185,7 +185,6 @@ HexyWeb/
 
 ---
 
-## Developer & License
+## License
 
-Developed by **DoctorLestrange**.  
 Licensed under the **MIT License** — see [LICENSE](LICENSE) for full details.
