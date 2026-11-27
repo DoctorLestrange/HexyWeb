@@ -8,10 +8,10 @@
       <img src="https://img.shields.io/badge/Live%20App-GitHub%20Pages-2589f5?style=flat-square&logo=githubpages&logoColor=white" alt="Live App on GitHub Pages" />
     </a>
     <a href="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/ci.yml">
-      <img src="https://img.shields.io/github/actions/workflow/status/DoctorLestrange/HexyWeb/ci.yml?branch=main&label=CI&style=flat-square" alt="CI Status" />
+      <img src="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI Status" />
     </a>
     <a href="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/deploy-pages.yml">
-      <img src="https://img.shields.io/github/actions/workflow/status/DoctorLestrange/HexyWeb/deploy-pages.yml?branch=main&label=Deploy%20Pages&style=flat-square" alt="Deploy to GitHub Pages Status" />
+      <img src="https://github.com/DoctorLestrange/HexyWeb/actions/workflows/deploy-pages.yml/badge.svg?branch=main" alt="Deploy to GitHub Pages Status" />
     </a>
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/License-MIT-15803d?style=flat-square" alt="MIT License" />
